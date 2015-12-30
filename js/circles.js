@@ -78,7 +78,7 @@
     this._value          = 0;
     this._maxValue       = options.maxValue || 100;
 
-    this._text           = options.text === undefined ? function(value){return this.htmlifyNumber(value);} : options.text;
+    this._text           = options.text === undefined ? function(value){return this.htmlifyNumber(value) + '%';} : options.text;
     this._strokeWidth    = options.width  || 10;
     this._colors         = options.colors || ['#EEE', '#F00'];
     this._svg            = null;

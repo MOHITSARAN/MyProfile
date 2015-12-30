@@ -1,9 +1,3 @@
-/*
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
-*/
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
@@ -23,8 +17,7 @@ html,body{
 }
 #nav {
   width: 100%;
-  position:static;
-  top:-32px;
+  position:relative;
 }
 
 #nav.affix {
@@ -33,6 +26,21 @@ html,body{
    z-index:10;
    -webkit-transition: all .6s ease-in-out;
 }
+................................ /* Team */ .................................
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-member img {
+    margin: 0 auto;
+	height:180px;
+	width:180px;
+    border: 4px solid #03CDE3;
+}
+
+
+.......................................................................................................
 /*------ HEADER STARTS---------*/
 ::-webkit-scrollbar-track
 {
@@ -96,7 +104,7 @@ html,body{
 .header-profile{
 	position:absolute;
 	bottom:-26%;
-	left: 42%;
+	left: 43%;
 }
 .header-top{
 	padding-bottom: 30px;
@@ -214,19 +222,19 @@ ul.hoby li i.tea{
 	background-position:-586px 0px;
 }
 a.download{
-	color:#fff;
-	font-size:20px;
-	text-transform:uppercase;
-	text-decoration:none;
-	background:#2980b9;
-	padding:20px 15px;
-	border-bottom:4px solid #6ab8ea;
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-o-border-radius: 6px;
-	-moz-border-radius: 6px;
-	-ms-border-radius: 6px;
-	margin-left:0.5em;
+	color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2980b9;
+    padding: 12px 12px;
+    border-bottom: 2px solid #2980B9;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    margin-left: 0.5em;
 }
 a.download:hover{
 	background:#6ab8ea;
@@ -340,7 +348,7 @@ label.book{
 	width:40%;
 	text-align:right;
 	position:absolute;
-	top:12em;
+	top: 14em;
 	left: 5.8em;
 }
 .exp-devide-grid-left:before{
@@ -354,7 +362,7 @@ label.book{
 	width:40%;
 	text-align:left;
 	position:absolute;
-	top: 20em;
+	top: 22em;
 	left: 43.255em;
 }
 .exp-devide-grid-rightb:before{
@@ -625,15 +633,15 @@ p.copyright a:hover{
 	.header {
 		min-height: 300px;
 	}
-	.headerbgs {
-		min-height: 300px;
-	}
 	.header-profile img {
-		width: 80%;
+		width: 50%;
+        height: 50%;
 	}
 	.header-profile {
-		left: 40%;
-	}
+    position: absolute;
+    bottom: -26%;
+    left: 25%;
+    }
 	ul.hoby li {
 		margin: 1em 0em;
 	}
@@ -675,9 +683,20 @@ p.copyright a:hover{
 }
 @media (max-width:800px){
 	.header-profile img {
-		width: 60%;
+		width: 50%;
+        height: 50%;
 	}
+	.header-profile {
+    position: absolute;
+    bottom: -26%;
+    left: 39%
+    }
 	.header {
+		background-attachment: inherit;
+		min-height: 192px;
+	}
+	.contact {
+		background-attachment: inherit;
 		min-height: 192px;
 	}
 	.header-top {
@@ -708,7 +727,7 @@ p.copyright a:hover{
 		left: 2.8em;
 	}
 	.exp-devide-grid-rightb {
-		top: 18em;
+		top: 21em;
 		left: 28.3em;
 	}
 	.education {
@@ -743,11 +762,19 @@ p.copyright a:hover{
 	}
 }
 @media (max-width:640px){
+	
 	.header-profile img {
-		width: 55%;
+		width: 50%;
+        height: 50%;
 	}
 	.header-profile {
-		left: 39%;
+    position: absolute;
+    bottom: -21%;
+    left: 25%;
+    }
+	.contact {
+		background-attachment: inherit;
+		min-height: 192px;
 	}
 	.header-top h2 {
 		font-size: 25px;
@@ -840,6 +867,15 @@ p.copyright a:hover{
 		height: 50px;
 		background-size: 760%;
 	}
+	.header {
+		background-attachment: inherit;
+		min-height: 192px;
+	}
+	.header-profile {
+    position: absolute;
+    bottom: -26%;
+    left: 25%;
+    }
 	ul.hoby li i.car {
 		background-position: -54px 0px;
 	}
@@ -859,22 +895,18 @@ p.copyright a:hover{
 		background-position: -331px 0px;
 	}
 	.header {
+		background-attachment: inherit;
 		min-height: 142px;
 	}
 	.header-profile img {
-		width: 40%;
-	}
-	.header-profile {
-		left: 37%;
+		width: 50%;
+        height: 50%;
 	}
 	.header-top h2 {
 		font-size: 20px;
 	}
 	.header-top {
 		margin-top: 9%;
-	}	
-	.header-profile {
-		left: 39%;
 	}
 	.header-top small {
 		font-size: 13px;
@@ -893,7 +925,7 @@ p.copyright a:hover{
 	}
 	.exp-devide h4 {
 		font-size: 14px;
-		width: 23%;
+		width: 32%;
 	}	
 	label.bag, label.book {
 		left: 7%;
@@ -906,11 +938,11 @@ p.copyright a:hover{
 		left: 0.8em;
 	}
 	.exp-devide-grid-rightb {
-		top: 18em;
+		top: 21em;
 		left: 17.9%;
 	}
 	.education {
-		margin-top: 110%;
+		margin-top: 120%;
 	}
 	span.devide-line {
 		height: 418px;
@@ -919,6 +951,7 @@ p.copyright a:hover{
 		min-height: 1040px;
 	}
 	.skill-grid h3 {
+		padding-bottom: 30px;
 		font-size: 16px;
 	}
 	ul.social li i {
@@ -986,6 +1019,9 @@ p.copyright a:hover{
 	}
 	.contact {
 		margin: 0em 0 0;
+		background-color: dimgray;
+		background-image: none;
+		min-height: 192px;
 	}
 	.contact-top p {
 		margin: 0.5em 0;
@@ -1057,11 +1093,105 @@ p.copyright a:hover{
 	border-width:0;
 }
 
-@media (max-width:320px){
-
+@media (max-width:390px){
+	
+	.header {
+		background-attachment: inherit;
+		min-height: 192px;
+	}
+	.header-profile {
+    position: absolute;
+    bottom: -26%;
+    left: 28%;
+    }
 
 	.header {
+	    background-attachment: inherit;	
 		min-height: 103px;
+	}
+	.contact {
+		background-attachment: inherit;
+		min-height: 192px;
+	}
+	.skills{
+	min-height:900px;
+}
+	.exp-devide h4 {
+			font-size: 14px;
+			width: 37%;
+	}
+	label.bag, label.book {
+		left: 5.5%;
+	}
+	.exp-devide-grid-left {
+		left: -0.4em;
+	}
+	.exp-devide-grid-right {
+		left: 22.8%;
+		width:80%
+	}
+	.exp-devide-grid-rightb {
+		left: 22.8%;
+		width:80%;
+	}
+	.education {
+		margin-top: 130%;
+	}
+	ul.hoby li {
+		margin: 0em 0em;
+	}
+	span.devide-line {
+		height: 434px;
+	}
+	.callbacks_nav {
+		top: 65%;
+	}
+	.callbacks_tabs {
+		left: 29%;
+	}
+	.contact-column i {
+		width: 48px;
+		height: 48px;
+		background-size: 300%;
+	}
+	.contact-column i.mail {
+		background-position: -48px 0px;
+	}
+	.contact-form{
+	width: 300px; 
+	padding-top: 30px;
+	}
+	.contact-column i.phone {
+		background-position: -98px 0px;
+	}
+	.exp-devide-grid-right p,  .exp-devide-grid-left p,  .exp-devide-grid-rightb p {
+		font-size: 13px;
+		line-height:1.5em;
+	}
+	.exp-devide-grid-right small,.exp-devide-grid-left small,.exp-devide-grid-rightb small,{
+		font-size:14px;
+	}
+}
+/*--- Media Queries Ends Here ---*/
+@media (max-width:320px){
+	
+	.header {
+		background-attachment: inherit;
+		min-height: 192px;
+	}
+	.header-profile {
+    position: absolute;
+    bottom: -26%;
+    left: 25%;
+    }
+
+	.header {
+	    background-attachment: inherit;	
+		min-height: 103px;
+	}
+	.contact {
+		background-attachment: inherit;
+		min-height: 192px;
 	}
 	.skills{
 	min-height:900px;
