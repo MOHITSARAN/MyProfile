@@ -31,6 +31,15 @@ html,body{
     margin-bottom: 50px;
     text-align: center;
 }
+.msg {
+    display: none;
+}
+.error {
+    color: red;
+}
+.success {
+    color: green;
+}
 
 .team-member img {
     margin: 0 auto;
@@ -223,11 +232,11 @@ ul.hoby li i.tea{
 }
 a.download{
 	color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
     background: #2980b9;
-    padding: 12px 12px;
+    padding: 10px 10px;
     border-bottom: 2px solid #2980B9;
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -403,7 +412,7 @@ label.book{
 
 .skill-grid h3{
 	color:#FFF;
-	font-size:1.8em;
+	font-size: 1.4em;
 }
 .circle{
 	color:#FFF;
@@ -867,6 +876,13 @@ p.copyright a:hover{
 		height: 50px;
 		background-size: 760%;
 	}
+	.social {
+		padding-right: 50px;
+	}
+	ul.social li {
+    display: block;
+    padding-top: 10px;
+    }
 	.header {
 		background-attachment: inherit;
 		min-height: 192px;
@@ -1099,6 +1115,9 @@ p.copyright a:hover{
 		background-attachment: inherit;
 		min-height: 192px;
 	}
+	.social {
+		padding-right: 50px;
+	}
 	.header-profile {
     position: absolute;
     bottom: -26%;
@@ -1178,6 +1197,14 @@ p.copyright a:hover{
 	.header {
 		background-attachment: inherit;
 		min-height: 192px;
+	}
+	
+	ul.social li {
+    display: block;
+    padding-top: 10px;
+	}
+	.social {
+		padding-right: 50px;
 	}
 	.header-profile {
     position: absolute;
